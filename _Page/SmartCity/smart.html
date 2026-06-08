@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="widthdevice-width, initial-scale=1.0" />
+  <title>Urbanify | Smart City</title>
+
+  <!-- Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../Assets/4.png">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="smart.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
+  <!-- 
+  font-family: "Manrope", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  -->
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!-- Loading -->
+  <div id="loading-screen">
+    <div class="loader"></div>
+  </div>
+  <!-- end of Loading -->
+
+  <!-- Header -->
+  <header>
+    <nav class="navigation">
+      <div class="nav-middle" id="nav-middle">
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="../About/about.html" class="nav-link">About</a>
+        <a href="#" class="nav-link active" id="nav-link-active">
+          Education <i class="fas fa-caret-down"></i>
+          <div class="dropdown-education" id="education-dropdown">
+            <div class="dropdown-education-content-container">
+              <div class="dropdown-education-content-container-top">
+                <div>
+                  <img src="../../Assets/Icon/SmartCity.svg" alt="">
+                </div>
+                <h1>Memberikan edukasi mengenai Smart City.</h1>
+              </div>
+              <div class="dropdown-education-content-container-down">
+                <div class="dropdown-education-content-container-down-left">
+                  <h2>Edukasi Utama</h2>
+                  <img class="image-smartcity" src="../../Assets/smartCity-2.png" alt="image not loading">
+                  <h3 class="link-smartcity">Smart City</h3>
+                  <p>
+                    Smart City adalah konsep perkotaan yang menggunakan teknologi untuk
+                    mengelola kota dengan lebih efisien.
+                  </p>
+                </div>
+                <div class="dropdown-education-content-container-down-right">
+                  <h2>Sub-Edukasi</h2>
+                  <p class="link-environment">
+                    Smart Environment
+                  </p>
+                  <p class="link-urban">
+                    Urban Greenspace
+                  </p>
+                  <p class="link-iot">
+                    Internet of Things
+                  </p>
+                  <p class="link-citizen">
+                    Citizen Engagement
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="underline" id="underline"></div>
+      </div>
+      <div class="logo-left">
+        <a href="../../index.html">
+          <img class="logo-nav" src="../../Assets/3.png" alt="Logo">
+        </a>
+      </div>
+      <div class="nav-middle" id="nav-middle">
+        <a href="../Gallery/gallery.html" class="nav-link active" id="nav-link-active">Gallery</a>
+        <a href="../Contact/contact.html" class="nav-link">Contact</a>
+        <a href="../AskAI/askai.html" class="nav-link">Ask AI</a>
+      </div>
+
+      <!-- RESPONSIVE -->
+      <div class="dropdown-phone">
+        <button class="dropbtn-phone"><i class="fas fa-bars"></i> Menu</button>
+        <div class="dropdown-phone-content">
+          <a href="../../index.html">Home</a>
+          <a href="../About/about.html">About</a>
+          <a href="../SmartCity/smart.html">Smart City</a>
+          <a href="../SmartEnvironment/environment.html">Smart Environment</a>
+          <a href="../UrbanGreenspace/UrbanGreenSpace.html">Urban Greenspace</a>
+          <a href="../IoT/iot.html">IoT Application</a>
+          <a href="../CitizenEngagement/citizenengagement.html">Citizen Engagement</a>
+          <a href="../Gallery/gallery.html">Gallery</a>
+          <a href="../Contact/contact.html">Contact</a>
+          <a href="../AskAI/askai.html">Ask AI</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End of Header -->
+
+  <!-- Section 1: Half IMG -->
+  <section class="fullscreen-section">
+    <div class="fullscreen-images-container">
+      <div class="images-container-left">
+        <div class="images-container-left-up">
+          <div class="images-container-left-up-left">
+            <div class="images-container-left-up-left-up" class="button-box-jurnal">
+              <img src="../SmartCity/smart-access/Awal1.jpg" alt="Image not loading" data-aos="zoom-in"
+                data-aos-anchor-placement="center-bottom">
+            </div>
+            <div class="images-container-left-up-left-down" class="button-box-jurnal">
+              <img src="../SmartCity/smart-access/Awal2.jpg" alt="Image not loading" data-aos="zoom-in"
+                data-aos-anchor-placement="center-bottom" data-aos-delay="1200">
+              <img src="../SmartCity/smart-access/Awal3.jpg" alt="Image not loading" data-aos="zoom-in"
+                data-aos-anchor-placement="center-bottom" data-aos-delay="1400">
+            </div>
+          </div>
+          <div class="images-container-left-up-right" class="button-box-jurnal">
+            <img src="../SmartCity/smart-access/Awal5.jpg" alt="Image not loading" data-aos="zoom-in"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="200">
+            <img src="../SmartCity/smart-access/Awal6.jpg" alt="Image not loading" data-aos="zoom-in"
+              data-aos-anchor-placement="center-bottom" data-aos-delay="1600">
+          </div>
+        </div>
+        <div class="images-container-left-down" class="button-box-jurnal">
+          <img src="../SmartCity/smart-access/awal9.jpg" alt="Image not loading" data-aos="zoom-in"
+            data-aos-anchor-placement="center-bottom" data-aos-delay="1000">
+        </div>
+      </div>
+      <div class="images-container-right">
+        <div class="images-container-right-left" class="button-box-jurnal">
+          <img src="../SmartCity/smart-access/Awal4.jpg" alt="Image not loading" data-aos="zoom-in"
+            data-aos-anchor-placement="center-bottom" data-aos-delay="400">
+          <img src="../SmartCity/smart-access/awal8.jpg" alt="Image not loading" data-aos="zoom-in"
+            data-aos-anchor-placement="center-bottom" data-aos-delay="800">
+        </div>
+        <div class="images-container-right-right" class="button-box-jurnal">
+          <img src="../SmartCity/smart-access/awal7.jpg" alt="Image not loading" data-aos="zoom-in"
+            data-aos-anchor-placement="center-bottom" data-aos-delay="600">
+        </div>
+      </div>
+    </div>
+    <div class="fullscreen-text-container">
+      <div class="title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1800"
+        data-aos-offset="0">
+        <h1>Mari Mengenal <span style="color: #84C318;">Smart City</span></h1>
+      </div>
+      <div class="website-statistics" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+        data-aos-offset="0">
+        <div class="ide-inovasi">
+          <h3>
+            Melalui
+          </h3>
+          <p>
+            Smart Environment
+          </p>
+        </div>
+        <div class="urun-dana-inovasi">
+          <h3>
+            Memanfaatkan
+          </h3>
+          <p>
+            Urban Greenspace
+          </p>
+        </div>
+        <div class="terkumpul-inovasi">
+          <h3>
+            Dengan IoT
+          </h3>
+          <p>
+            Serta Citizen Engagement
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End of Section 1: Half IMG -->
+
+  <!-- Section 2: Main Website -->
+  <section id="section2">
+    <!-- Pengertian -->
+    <section id="Pengertian-smartcity">
+      <div class="pengertian-smartcity-container">
+        <div class="pengertian-text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="200"
+          data-aos-easing="ease-in-out">
+          <h1>Pengertian Smart City</h1>
+          <p class="line"></p>
+          <p>
+            Smart City adalah sebuah konsep perkotaan yang memanfaatkan teknologi informasi dan komunikasi (TIK) untuk
+            meningkatkan kualitas hidup warganya. Dalam kota pintar, berbagai aspek kehidupan seperti transportasi,
+            energi, kesehatan, pendidikan, dan lingkungan diintegrasikan dengan teknologi untuk mencapai efisiensi,
+            keberlanjutan, dan kenyamanan.
+            <br><br>
+            Beberapa Tujuan Smart City : Optimalisasi penggunaan sumber daya, meningkatkan produktivitas.
+            Meningkatkan kualitas layanan publik seperti penyediakan layanan publik yang lebih cepat, mudah diakses, dan
+            responsif terhadap kebutuhan warga, serta menciptakan lingkungan yang lebih aman, nyaman, dan berkelanjutan
+            bagi seluruh warga.
+            <br><br>
+          </p>
+          <div class="pengertian-subeducation" data-aos="fade-up" data-aos-delay="500" data-aos-duration="200"
+            data-aos-easing="ease-in-out">
+            <h1>Sub Education Kami </h1>
+            <div class="sectiontwo-smartcity">
+              <div class="sectiontwo-smartcity-item">
+                <p>
+                  Urbanify: Membangun kota masa depan yang cerdas, cepat, dan responsif. Edukasi Smart City untuk
+                  wujudkan kota impianmu. Ayo bersama kami, ciptakan perubahan kehidupan perkotaan yang lebih baik!
+                </p>
+              </div>
+              <div class="gambarmanfaat">
+                <div class="sectiontwo-smartcity-item" data-aos="fade-up" data-aos-delay="700" data-aos-duration="200"
+                  data-aos-easing="ease-in-out">
+                  <img src="../SmartCity/icons/citizen engagement.jpg" />
+                </div>
+                <div class="sectiontwo-smartcity-item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="200"
+                  data-aos-easing="ease-in-out">
+                  <img src="../SmartCity/icons/iot.jpg" />
+                </div>
+                <div class="sectiontwo-smartcity-item" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="200"
+                  data-aos-easing="ease-in-out">
+                  <img src="../SmartCity/icons/smartenvi.jpg" />
+                </div>
+                <div class="sectiontwo-smartcity-item" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="200"
+                  data-aos-easing="ease-in-out">
+                  <img src="../SmartCity/icons/urbangreen.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sectiontwo-smartcity-pengertian-img">
+          <img src="../SmartCity/smart-access/gambar3.jpg" alt="Urban Image">
+        </div>
+      </div>
+    </section>
+    <!-- end of Pengertian -->
+
+    <!-- Why SmartCity -->
+    <div class="sectiontwo-smartcity-whysmartcity">
+      <div class="sectiontwo-smartcity-whysmartcity-image">
+        <img src="smart-access/Gambar2.jpg">
+      </div>
+      <div class="sectiontwo-smartcity-whysmartcity-text" data-aos="fade-left" data-aos-delay="300"
+        data-aos-duration="200" data-aos-easing="ease-in-out">
+        <h2>MENGAPA URBANIFY MEMILIH </h2>
+        <h1> SMART CITY </h1>
+        <div class="centered">
+          <i class="fas fa-quote-left"></i>
+        </div>
+        <p>
+          Urbanify memilih Smart City sebagai fokus utama karena konsep kota
+          cerdas menawarkan solusi komprehensif untuk tantangan perkotaan
+          yang semakin kompleks. Urbanify melihat Smart City
+          sebagai sebuah visi yang menginspirasi dan relevan untuk masa depan perkotaan.
+          Dengan mengedukasi dan memberdayakan masyarakat tentang konsep Smart City,
+          UrbiSense berharap dapat berkontribusi dalam mewujudkan kota-kota yang lebih cerdas, berkelanjutan, dan layak
+          huni di Indonesia dan seluruh dunia.
+        </p>
+      </div>
+    </div>
+    <div class="sectiontwo-smartcity-perangkat">
+      <h2>URBANIFY</h2>
+      <h1>Unsur Pembentuk Konsep Smart City di Era Digital</h1>
+      <div class="sectiontwo-smartcity-perangkat-item-container">
+        <div class="sectiontwo-smartcity-perangkat-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="200"
+          data-aos-easing="ease-in-out">
+          <div class="image-container">
+            <img src="../SmartCity/smart-access/UrbanGreenSpace.jpg">
+            <div class="image-overlay">
+              <h2>Urban Greenspace</h2>
+              <p>
+                Urban Greenspace adalah area-area di perkotaan yang
+                didominasi oleh vegetasi, seperti taman dan hutan kota,
+                yang memberikan manfaat ekologis, sosial, dan ekonomi bagi
+                penduduk.
+            </div>
+          </div>
+        </div>
+        <div class="sectiontwo-smartcity-perangkat-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="200"
+          data-aos-easing="ease-in-out">
+          <div class="image-container">
+            <img src="../SmartCity/smart-access/envibg.jpg">
+            <div class="image-overlay">
+              <h2>Smart Enviroment</h2>
+              <p>
+                Konsep pengelolaan lingkungan yang memanfaatkan
+                teknologi dan data untuk menciptakan lingkungan yang
+                lebih sehat, efisien, dan berkelanjutan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sectiontwo-smartcity-perangkat-item" data-aos="fade-up" data-aos-delay="700" data-aos-duration="200"
+          data-aos-easing="ease-in-out">
+          <div class="image-container">
+            <img src="../SmartCity/smart-access/IotBackground.jpg">
+            <div class="image-overlay">
+              <h2>Internet of Things</h2>
+              <p>
+                Jaringan benda fisik yang terhubung ke internet
+                untuk mengumpulkan dan bertukar data, mendukung
+                terciptanya Urban Greenspace dan Smart Environment
+                syang lebih efisien dan efektif.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="sectiontwo-smartcity-perangkat-item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="200"
+          data-aos-easing="ease-in-out">
+          <div class="image-container">
+            <img src="../SmartCity/smart-access/CitizenE.jpg">
+            <div class="image-overlay">
+              <h2>Citizen Engagement</h2>
+              <p>
+                Keterlibatan aktif masyarakat dalam
+                pengambilan keputusan dan implementasi
+                terkait isu-isu publik, termasuk dalam konteks
+                Urban Greenspace dan Smart Environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  end of Perangkat -->
+
+    <!-- jurnal -->
+    <div class="jurnal">
+      <div class="jurnal-text">
+        <h2>Jurnal Terkait Smart City:</h2>
+        <p>Smart city policy in Indonesia: An overview from the green constitution's perspective</p>
+        <div class="button-box-jurnal" class="button-box-jurnal" data-aos="zoom-in"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+          <a href="https://repository.umi.ac.id/2090/1/548-7417-3-PB.pdf" class="button-jurnal">Baca Lebih
+            Lanjut</a>
+        </div>
+        <p>Implementation of smart city concept: A case of Jakarta smart city, Indonesia</p>
+        <div class="button-box-jurnal" class="button-box-jurnal" data-aos="zoom-in"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="150">
+          <a href="https://iopscience.iop.org/article/10.1088/1755-1315/716/1/012128/pdf" class="button-jurnal">Baca
+            Lebih
+            Lanjut</a>
+        </div>
+      </div>
+      <div class="jurnal-image">
+        <img src="../SmartCity/smart-access/Jurnal.jpg">
+      </div>
+    </div>
+    <!-- end of jurnal -->
+
+    <!-- Quiz -->
+    <div class="quizContainer">
+      <div class="quizContainerLeft">
+        <div class="quizContainerLeftUp">
+          <h2>Quiz pemahaman umum</h2>
+          <h1>About Smart City</h1>
+        </div>
+        <div class="quizContainerLeftDown">
+          <div id="question"></div>
+          <div id="score">Poin: 0</div>
+          <button id="nextBtn">Skip Soal</button>
+          <div id="result"></div>
+          <button id="homePage" style="display: none">Balik ke Home</button>
+        </div>
+      </div>
+      <div class="quizContainerRight" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="500">
+        <div id="options"></div>
+      </div>
+    </div>
+    </div>
+    <!-- End of Quiz -->
+
+    <!-- end of Section 2: Main Website -->
+  </section>
+
+
+  <!-- footer -->
+  <footer>
+    <section id="footer">
+      <div class="footer-container">
+        <div class="upper-footer">
+          <div class="logo-and-description">
+            <img src="../../Assets/2.png" alt="Image not loading">
+            <h3>Urbanify adalah website edukasi lengkap dan interaktif mengenai Smart City dengan 4 elemen pembentuknya
+            </h3>
+          </div>
+          <div class="location">
+            <h2>Temui Kami</h2>
+            <div class="location-logo" style="margin-bottom: 10px;">
+              <img src="../../Assets/company/binus_logo.svg" alt="BINUS Logo" style="height: 50px;">
+            </div>
+            <p>
+              <span style="font-weight: 800;">BINUS@Malang</span>
+              <br>
+              <span style="font-weight: 600;">Group 6 HCI</span>
+              <br><br>
+              <span>Araya Mansion No. 8-22, Genitri, Tirtomoyo, Pakis, Malang, East Java.</span>
+            </p>
+          </div>
+          <div class="contact">
+            <h2>Hubungi Kami</h2>
+            <p>
+              <span>Sosial Media:</span>
+            </p>
+            <div>
+              <div class="facebook">
+                <i class="fa fa-facebook"></i>
+              </div>
+              <div class="instagram">
+                <i class="fa fa-instagram"></i>
+              </div>
+              <div class="twitter-x">
+                <i class="fa fa-twitter"></i>
+              </div>
+            </div>
+            <p>
+              <br>
+              <span>Call Support: (0361) 485363</span>
+              <br>
+              <span>Fax: 000-000-0000</span>
+              <br>
+              <span>Email: urbanify@fcc4sma.com</span>
+            </p>
+          </div>
+          <div class="navigasi">
+            <h2>Navigasi</h2>
+            <div>
+              <div>
+                <a href="../../index.html">Home</a>
+              </div>
+              <div>
+                <a href="../About/about.html">About</a>
+              </div>
+              <div>
+                <a href="../Gallery/gallery.html">Gallery</a>
+              </div>
+              <div>
+                <a href="../Contact/contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="education-navigation-container">
+            <div class="education-navigation-title-container">
+              <h2>Edukasi Kami</h2>
+            </div>
+            <div class="education-navigation-content-container">
+              <div class="education-navigation-theme">
+                <h3>Edukasi Utama</h3>
+                <div>
+                  <a href="../SmartCity/smart.html">Smart City</a>
+                </div>
+              </div>
+              <div class="education-navigation-subtheme">
+                <h3>Sub-Edukasi</h3>
+                <div>
+                  <a href="../SmartEnvironment/environment.html">Smart Environment</a>
+                </div>
+                <div>
+                  <a href="../UrbanGreenspace/UrbanGreenSpace.html">Urban Greenspace</a>
+                </div>
+                <div>
+                  <a href="../IoT/iot.html">IoT Application</a>
+                </div>
+                <div>
+                  <a href="../CitizenEngagement/citizenengagement.html">Citizen Engagement</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="down-footer">
+          <h2>Copyright &copy; 2024 Urbanify. <b>All Rights Reserved.</b>
+            By Abyasa Wedha
+          </h2>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- end of footer -->
+  <script>
+    AOS.init();
+  </script>
+  <script src="../SmartCity/smart.js"></script>
+</body>
+
+</html>
+

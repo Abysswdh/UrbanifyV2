@@ -1,0 +1,17 @@
+{
+  "name": "urbanifyv2",
+  "version": "1.0.0",
+  "description": "Educational website with AI-powered Q&A system",
+  "main": "index.html",
+  "keywords": [
+    "education",
+    "smart-city",
+    "ai",
+    "gemini"
+  ],
+  "author": "Abysswdh",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.3.0"
+  }
+}

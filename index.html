@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urbanify</title>
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Assets/4.png" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 
+  font-family: "Manrope", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  -->
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Loading -->
+    <div id="loading-screen">
+      <div class="loader"></div>
+    </div>
+    <!-- end of Loading -->
+
+    <!-- Header -->
+    <header>
+      <nav class="navigation">
+        <div class="nav-middle" id="nav-middle">
+          <a href="index.html" class="nav-link active" id="nav-link-active"
+            >Home</a
+          >
+          <a href="_Page/About/about.html" class="nav-link">About</a>
+          <a href="#" class="nav-link" id="education-link">
+            Education <i class="fas fa-caret-down"></i>
+            <div class="dropdown-education" id="education-dropdown">
+              <div class="dropdown-education-content-container">
+                <div class="dropdown-education-content-container-top">
+                  <div>
+                    <img
+                      src="Assets/Icon/SmartCity.svg"
+                      alt="image not loading"
+                    />
+                  </div>
+                  <h1>Memberikan edukasi mengenai Smart City.</h1>
+                </div>
+                <div class="dropdown-education-content-container-down">
+                  <div class="dropdown-education-content-container-down-left">
+                    <h2>Edukasi Utama</h2>
+                    <img
+                      class="image-smartcity"
+                      src="Assets/smartCity-2.png"
+                      alt="image not loading"
+                    />
+                    <h3 class="link-smartcity">Smart City</h3>
+                    <p>
+                      Smart City adalah konsep perkotaan yang menggunakan
+                      teknologi untuk mengelola kota dengan lebih efisien.
+                    </p>
+                  </div>
+                  <div class="dropdown-education-content-container-down-right">
+                    <h2>Sub-Edukasi</h2>
+                    <p class="link-environment">Smart Environment</p>
+                    <p class="link-urban">Urban Greenspace</p>
+                    <p class="link-iot">Internet of Things</p>
+                    <p class="link-citizen">Citizen Engagement</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="underline" id="underline"></div>
+        </div>
+        <div class="logo-left">
+          <a href="index.html">
+            <img class="logo-nav" src="Assets/3.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="nav-middle" id="nav-middle">
+          <a
+            href="_Page/Gallery/gallery.html"
+            class="nav-link active"
+            id="nav-link-active"
+            >Gallery</a
+          >
+          <a href="_Page/Contact/contact.html" class="nav-link">Contact</a>
+          <a href="_Page/AskAI/askai.html" class="nav-link">Ask AI</a>
+        </div>
+
+        <!-- RESPONSIVE -->
+        <div class="dropdown-phone">
+          <button class="dropbtn-phone">
+            <i class="fas fa-bars"></i> Menu
+          </button>
+          <div class="dropdown-phone-content">
+            <a href="index.html">Home</a>
+            <a href="_Page/About/about.html">About</a>
+            <a href="_Page/SmartCity/smart.html">Smart City</a>
+            <a href="_Page/SmartEnvironment/environment.html"
+              >Smart Environment</a
+            >
+            <a href="_Page/UrbanGreenspace/UrbanGreenSpace.html"
+              >Urban Greenspace</a
+            >
+            <a href="_Page/IoT/iot.html">IoT Application</a>
+            <a href="_Page/CitizenEngagement/citizenengagement.html"
+              >Citizen Engagement</a
+            >
+            <a href="_Page/Gallery/gallery.html">Gallery</a>
+            <a href="_Page/Contact/contact.html">Contact</a>
+            <a href="_Page/AskAI/askai.html">Ask AI</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <main>
+      <!-- Section 1: Video -->
+      <section id="section-one">
+        <div>
+          <h1>
+            Get to Know the Magic Behind <br />
+            <span class="colorspan-green1">Smart City</span>
+          </h1>
+          <form id="askAiRedirectForm" class="ask-ai-prompt-form">
+            <input
+              id="askAiPrompt"
+              type="text"
+              placeholder="Contoh: Apa peran IoT dalam Smart City?"
+              autocomplete="off"
+              required
+            />
+            <button type="submit">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+          <video
+            autoplay
+            loop
+            muted
+            id="myVideo"
+            style="filter: brightness(0.5)"
+          >
+            <source src="Assets/Intro.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <!-- End of Section 1: Video -->
+
+      <!-- Section 2: Main website -->
+      <section id="section-two">
+        <div class="sectiontwo">
+          <!-- Introduction -->
+          <div class="sectiontwo-introduction-container">
+            <div class="sectiontwo-introduction-title-container">
+              <div
+                class="sectiontwo-introduction-title-img"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <img src="Assets/4.png" alt="" />
+              </div>
+              <div class="sectiontwo-introduction-title-text">
+                <h1>
+                  Urbanify adalah website edukasi dalam
+                  <span style="color: #af9a71"
+                    >meningkatkan cara pengelolaan kota dan lingkungan.</span
+                  >
+                </h1>
+              </div>
+            </div>
+            <div class="sectiontwo-introduction-content-container">
+              <div
+                class="sectiontwo-introduction-content-left"
+                data-aos="fade-right"
+                data-aos-delay="250"
+              >
+                <h2>ABOUT US</h2>
+                <p>
+                  Kata Urbanify sendiri diambil dari kata "Urban" dan akhiran
+                  "-ify", dimana Urban berarti perkotaan atau berkaitan dengan
+                  kota, dan "-ify" adalah akhiran yang berarti "membuat menjadi"
+                  atau "mengubah". Jadi, Urbanify berarti proses mengubah atau
+                  meningkatkan aspek perkotaan, menciptakan kota yang lebih baik
+                  dan lebih cerdas.
+                </p>
+              </div>
+              <div class="sectiontwo-introduction-content-right">
+                <div class="sectiontwo-introduction-content-right-top">
+                  <img
+                    src="Assets/Icon/SmartCity.svg"
+                    alt=""
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="200"
+                    data-aos-easing="ease-in-out"
+                  />
+                  <img
+                    src="Assets/Icon/Smart Environment.svg"
+                    alt=""
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="400"
+                    data-aos-easing="ease-in-out"
+                  />
+                </div>
+                <div class="sectiontwo-introduction-content-right-down">
+                  <img
+                    src="Assets/Icon/UrbanGreenspace.svg"
+                    alt=""
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="600"
+                    data-aos-easing="ease-in-out"
+                  />
+                  <img
+                    src="Assets/Icon/IOT.svg"
+                    alt=""
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Introduction -->
+
+        <!-- Smart City -->
+        <section id="section2SmartCity">
+          <div class="sectiontwo-smartcity-pengertian">
+            <div
+              class="sectiontwo-smartcity-pengertian-text"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <h2>Mari Mengenal</h2>
+              <h1>Smart <span class="colorspan-green2"> City </span></h1>
+              <p>
+                Smart City adalah konsep perkotaan yang menggunakan teknologi
+                untuk meningkatkan kualitas hidup dan mengelola kota dengan
+                lebih efisien. Dengan inovasi digital, Smart City berupaya
+                mengatasi masalah seperti lalu lintas, polusi, dan sebagainya.
+              </p>
+              <div class="button-box2">
+                <a href="_Page/SmartCity/smart.html" class="button2"
+                  >Pelajari Smart City</a
+                >
+              </div>
+            </div>
+            <div class="sectiontwo-smartcity-about-img">
+              <div class="slides-container">
+                <div class="slides">
+                  <img src="_Page/SmartCity/smart-access/Awal4.jpg" alt="1" />
+                  <img src="Assets/smartCity-3.jpeg" alt="2" />
+                  <img src="Assets/smartCity-4.png" alt="3" />
+                  <img src="_Page/SmartCity/smart-access/Awal2.jpg" alt="4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Smart City -->
+
+        <!-- Sub-theme Box list -->
+        <section>
+          <div class="title2-container">
+            <h1>Sub-Edukasi yang Kami Akan Bahas</h1>
+          </div>
+          <div class="box-container-overall">
+            <div class="box-container-left">
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="200"
+              >
+                <img
+                  src="Assets/Icon/Smart Environment.svg"
+                  alt="Smart Enviroment"
+                />
+                <h1>
+                  Smart <br />
+                  Environment
+                </h1>
+                <a href="#section2Smart"> Learn more </a>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="400"
+              >
+                <img
+                  src="Assets/Icon/UrbanGreenspace.svg"
+                  alt="Urban Greenspace"
+                />
+                <h1>
+                  Urban <br />
+                  GreenSpace
+                </h1>
+                <a href="#section2Urban"> Learn more </a>
+              </div>
+            </div>
+            <div class="box-container-right">
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+              >
+                <img src="Assets/Icon/IOT.svg" alt="IoT" />
+                <h1>
+                  IoT <br />
+                  Application
+                </h1>
+                <a href="#section2IoT"> Learn more </a>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="800"
+              >
+                <img
+                  src="Assets/Icon/CitizenEngagement.svg"
+                  alt="Citizen Engagement"
+                />
+                <h1>
+                  Citizen <br />
+                  Engagement
+                </h1>
+                <a href="#section2Citizen"> Learn more </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Sub-theme Box list-->
+
+        <!-- Smart Enviroment -->
+        <section id="section2Smart">
+          <div class="sectiontwo-smartenvironment-pengertian">
+            <div
+              class="sectiontwo-smartenvironment-pengertian-text"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="200"
+              data-aos-easing="ease-in-out"
+            >
+              <h2>MELALUI</h2>
+              <h1>Smart <span class="colorspan-green2"> Environment </span></h1>
+              <p>
+                lingkungan yang dilengkapi dengan teknologi canggih dan sensor
+                yang mengoptimalkan penggunaan sumber daya, dan meningkatkan
+                kenyamanan serta efisiensi
+              </p>
+              <div class="button-box2">
+                <a
+                  href="_Page/SmartEnvironment/environment.html"
+                  class="button2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div
+              class="sectiontwo-smartenvironment-pengertian-img"
+              data-aos="fade-right"
+              data-aos-delay="150"
+              data-aos-duration="200"
+              data-aos-easing="ease-in-out"
+            >
+              <img src="Assets/2.jpeg" alt="Environment" />
+            </div>
+          </div>
+        </section>
+        <!-- End of Smart Enviroment -->
+
+        <!-- Urban GreenSpace -->
+        <section id="section2Urban">
+          <div class="sectiontwo-urban-pengertian">
+            <div
+              class="sectiontwo-urban-pengertian-text"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="200"
+              data-aos-easing="ease-in-out"
+            >
+              <h2>MEMANFAATKAN</h2>
+              <h1>Urban <span class="colorspan-green2"> GreenSpace </span></h1>
+              <p>
+                Konsep yang mengacu pada area terbuka hijau di dalam kawasan
+                perkotaan dengan tujuan memberikan akses ke alam dan lingkungan
+                hijau bagi penduduk perkotaan
+              </p>
+              <div class="button-box2">
+                <a
+                  href="_Page/UrbanGreenspace/UrbanGreenSpace.html"
+                  class="button2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div
+              class="sectiontwo-urban-pengertian-img"
+              data-aos="fade-left"
+              data-aos-delay="150"
+              data-aos-duration="200"
+              data-aos-easing="ease-in-out"
+            >
+              <img src="Assets/3.jpeg" alt="Urban Greenspace" />
+            </div>
+          </div>
+        </section>
+        <!-- End of Urban GreenSpace -->
+
+        <!-- IoT -->
+        <section id="section2IoT">
+          <div class="sectiontwo-iot-pengertian">
+            <div
+              class="sectiontwo-iot-pengertian-text"
+              data-aos="fade-left"
+              data-aos-delay="150"
+              data-aos-duration="200"
+              data-aos-easing="ease-in-out"
+            >
+              <h2>INTERNET OF THINGS</h2>
+              <h1>IoT <span class="colorspan-green2">Application </span></h1>
+              <p>
+                Integrasi internet dalam berbagai fasilitas agar kota menjadi
+                lebih efisien dan ramah lingkungan
+              </p>
+              <div class="button-box2">
+                <a href="_Page/IoT/iot.html" class="button2">Learn More</a>
+              </div>
+            </div>
+            <div class="sectiontwo-iot-pengertian-container">
+              <div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="200"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src="Assets/iot1.png" alt="Image 1" />
+                  <p>Green Roof Monitoring</p>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-duration="200"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src="Assets/iot2.png" alt="Image 2" />
+                  <p>Interactive Information</p>
+                </div>
+              </div>
+              <div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-aos-duration="200"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src="Assets/iot3.png" alt="Image 3" />
+                  <p>Predictive Maintenance</p>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-aos-duration="200"
+                  data-aos-easing="ease-in-out"
+                >
+                  <img src="Assets/iot4.png" alt="Image 4" />
+                  <p>Connected Waste</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of IoT -->
+
+        <!-- CitizenEngagement -->
+        <section id="section2Citizen">
+          <div class="sectiontwo-citizen-pengertian">
+            <div
+              class="sectiontwo-citizen-pengertian-text"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              data-aos-duration="200"
+              data-aos-easing="ease-in-out"
+            >
+              <h2>DENGAN</h2>
+              <h1>
+                Citizen <span class="colorspan-green2"> Engagement </span>
+              </h1>
+              <p>
+                Konsep yang mendorong keterlibatan aktif warga dalam proses
+                pengambilan keputusan publik, memastikan suara mereka didengar
+                dan dipertimbangkan dalam membentuk kebijakan yang berdampak
+                pada kehidupan mereka.
+              </p>
+              <div class="button-box2">
+                <a
+                  href="_Page/CitizenEngagement/citizenengagement.html"
+                  class="button2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="sectiontwo-citizen-pengertian-container">
+              <div
+                class="sectiontwo-citizen-pengertian-container-img"
+                data-aos="fade-left"
+                data-aos-delay="150"
+                data-aos-duration="200"
+                data-aos-easing="ease-in-out"
+              >
+                <img
+                  src="Assets/Icon/CitizenEngagement.svg"
+                  alt="Citizen Engagement"
+                />
+                <p>Citizen Engagement</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of CitizenEngagment -->
+
+        <!-- Berita -->
+        <div class="sectiontwo-berita-container">
+          <div class="sectiontwo-berita-title">
+            <h1>Berita terkini mengenai Smart City</h1>
+          </div>
+          <div class="sectiontwo-berita-boxcontainer">
+            <div class="sectiontwo-berita-boxcontainer-left">
+              <div
+                class="sectiontwo-berita-box"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <a
+                  href="https://bali.antaranews.com/berita/355767/kemendagri-jajaki-kerja-sama-di-world-smart-city-expo-2024"
+                  target="_blank"
+                >
+                  <div class="sectiontwo-berita-box-img-container">
+                    <img
+                      src="Assets/news/news-1-antaranews.webp"
+                      title="Image & Title by bali.antaranews.com"
+                      alt="image not loading"
+                    />
+                  </div>
+                </a>
+                <h1>
+                  <a
+                    style="text-decoration: none; color: #4c6444"
+                    href="https://bali.antaranews.com/berita/355767/kemendagri-jajaki-kerja-sama-di-world-smart-city-expo-2024"
+                    target="_blank"
+                    >Kemendagri jajaki kerja sama di World Smart City Expo
+                    2024</a
+                  >
+                </h1>
+                <p>
+                  Kementerian Dalam Negeri(Kemendagri) menjajaki kerja sama saat
+                  menghadiri World Smart City Expo (WSCE) 2024 di Korea
+                  International Exhibition Center, Korea.
+                </p>
+                <h2>
+                  Jumat, 26 Juli 2024 · Sumber:
+                  <a
+                    class="sectiontwo-berita-box-link"
+                    href="https://bali.antaranews.com"
+                    target="_blank"
+                    >bali.antaranews.com</a
+                  >
+                </h2>
+              </div>
+              <div
+                class="sectiontwo-berita-box"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
+                <a
+                  href="https://www.rri.co.id/nasional/960903/pemerintah-indonesia-komitmen-dorong-penerapan-kota-cerdas"
+                  target="_blank"
+                >
+                  <div class="sectiontwo-berita-box-img-container">
+                    <img
+                      src="Assets/news/news-2-rri.jpeg"
+                      title="Image & Title by rri.co.id"
+                      alt="Smart City Article Image"
+                    />
+                  </div>
+                </a>
+                <h1>
+                  <a
+                    style="text-decoration: none; color: #4c6444"
+                    href="https://www.rri.co.id/nasional/960903/pemerintah-indonesia-komitmen-dorong-penerapan-kota-cerdas"
+                    target="_blank"
+                  >
+                    Pemerintah Indonesia Komitmen Dorong Penerapan Kota Cerdas
+                  </a>
+                </h1>
+                <p>
+                  Pemerintah Indonesia berkomitmen mendorong penerapan kota
+                  cerdas dengan berbagai inisiatif dan kerja sama.
+                </p>
+                <h2>
+                  Minggu, 08 September 2024 · Sumber:
+                  <a
+                    class="sectiontwo-berita-box-link"
+                    href="https://www.rri.co.id"
+                    target="_blank"
+                    >rri.co.id</a
+                  >
+                </h2>
+              </div>
+            </div>
+            <div class="sectiontwo-berita-boxcontainer-right">
+              <div
+                class="sectiontwo-berita-box"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <a
+                  href="https://diskominfo.semarangkota.go.id/berita/diskominfo-kota-semarang-kunjungi-world-smart-city-expo-2024-di-korea-selatan"
+                  target="_blank"
+                >
+                  <div class="sectiontwo-berita-box-img-container">
+                    <img
+                      src="Assets/news/news-3-semarang.jpeg"
+                      title="Image & Title by diskominfo.semarangkota.go.id"
+                      alt="Semarang City at Smart City Expo"
+                    />
+                  </div>
+                </a>
+                <h1>
+                  <a
+                    style="text-decoration: none; color: #4c6444"
+                    href="https://diskominfo.semarangkota.go.id/berita/diskominfo-kota-semarang-kunjungi-world-smart-city-expo-2024-di-korea-selatan"
+                    target="_blank"
+                  >
+                    Diskominfo Kota Semarang Kunjungi World Smart City Expo 2024
+                    di Korea Selatan
+                  </a>
+                </h1>
+                <p>
+                  Diskominfo Kota Semarang mengunjungi World Smart City Expo
+                  2024 di Korea Selatan guna membahas penerapan teknologi
+                  cerdas.
+                </p>
+                <h2>
+                  Selasa, 03 September 2024 · Sumber:
+                  <a
+                    class="sectiontwo-berita-box-link"
+                    href="https://diskominfo.semarangkota.go.id"
+                    target="_blank"
+                    >diskominfo.semarangkota.go.id</a
+                  >
+                </h2>
+              </div>
+              <div
+                class="sectiontwo-berita-box"
+                data-aos="fade-up"
+                data-aos-delay="750"
+              >
+                <a
+                  href="https://www.detik.com/properti/berita/d-7444714/ikn-dibangun-pakai-konsep-smart-city-pupr-akan-jadi-contoh-di-ri"
+                  target="_blank"
+                >
+                  <div class="sectiontwo-berita-box-img-container">
+                    <img
+                      src="Assets/news/news-4-detik.jpeg"
+                      title="Image & Title by detik.com"
+                      alt="IKN Smart City Concept"
+                    />
+                  </div>
+                </a>
+                <h1>
+                  <a
+                    style="text-decoration: none; color: #4c6444"
+                    href="https://www.detik.com/properti/berita/d-7444714/ikn-dibangun-pakai-konsep-smart-city-pupr-akan-jadi-contoh-di-ri"
+                    target="_blank"
+                  >
+                    IKN Dibangun Pakai Konsep Smart City, PUPR Akan Jadi Contoh
+                    di RI
+                  </a>
+                </h1>
+                <p>
+                  IKN akan dibangun dengan konsep smart city, menjadi contoh
+                  penerapan teknologi kota cerdas di Indonesia.
+                </p>
+                <h2>
+                  Kamis, 08 Juli 2024 · Sumber:
+                  <a
+                    class="sectiontwo-berita-box-link"
+                    href="https://www.detik.com"
+                    target="_blank"
+                    >detik.com</a
+                  >
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Berita -->
+      <!-- End of Section 2: Main Website -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <section id="footer">
+        <div class="footer-container">
+          <div class="upper-footer">
+            <div class="logo-and-description">
+              <img src="Assets/2.png" alt="Image not loading" />
+              <h3>
+                Urbanify adalah website edukasi lengkap dan interaktif mengenai
+                Smart City dengan 4 elemen pembentuknya
+              </h3>
+            </div>
+            <div class="location">
+              <h2>Temui Kami</h2>
+              <div class="location-logo" style="margin-bottom: 10px;">
+                <img src="Assets/company/binus_logo.svg" alt="BINUS Logo" style="height: 50px;">
+              </div>
+              <p>
+                <span style="font-weight: 800;">BINUS@Malang</span>
+                <br>
+                <span style="font-weight: 600;">Group 6 HCI</span>
+                <br><br>
+                <span>Araya Mansion No. 8-22, Genitri, Tirtomoyo, Pakis, Malang, East Java.</span>
+              </p>
+            </div>
+            <div class="contact">
+              <h2>Hubungi Kami</h2>
+              <p>
+                <span>Sosial Media:</span>
+              </p>
+              <div>
+                <div class="facebook">
+                  <i class="fa fa-facebook"></i>
+                </div>
+                <div class="instagram">
+                  <i class="fa fa-instagram"></i>
+                </div>
+                <div class="twitter-x">
+                  <i class="fa fa-twitter"></i>
+                </div>
+              </div>
+              <p>
+                <br />
+                <span>Call Support: (0361) 485363</span>
+                <br />
+                <span>Fax: 000-000-0000</span>
+                <br />
+                <span>Email: urbanify@fcc4sma.com</span>
+              </p>
+            </div>
+            <div class="navigasi">
+              <h2>Navigasi</h2>
+              <div>
+                <div>
+                  <a href="index.html">Home</a>
+                </div>
+                <div>
+                  <a href="_Page/About/about.html">About</a>
+                </div>
+                <div>
+                  <a href="_Page/Gallery/gallery.html">Gallery</a>
+                </div>
+                <div>
+                  <a href="_Page/Contact/contact.html">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="education-navigation-container">
+              <div class="education-navigation-title-container">
+                <h2>Edukasi Kami</h2>
+              </div>
+              <div class="education-navigation-content-container">
+                <div class="education-navigation-theme">
+                  <h3>Edukasi Utama</h3>
+                  <div>
+                    <a href="_Page/SmartCity/smart.html">Smart City</a>
+                  </div>
+                </div>
+                <div class="education-navigation-subtheme">
+                  <h3>Sub-Edukasi</h3>
+                  <div>
+                    <a href="_Page/SmartEnvironment/environment.html"
+                      >Smart Environment</a
+                    >
+                  </div>
+                  <div>
+                    <a href="_Page/UrbanGreenspace/UrbanGreenSpace.html"
+                      >Urban Greenspace</a
+                    >
+                  </div>
+                  <div>
+                    <a href="_Page/IoT/iot.html">IoT Application</a>
+                  </div>
+                  <div>
+                    <a href="_Page/CitizenEngagement/citizenengagement.html"
+                      >Citizen Engagement</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="down-footer">
+            <h2>
+              Copyright &copy; 2024 Urbanify. <b>All Rights Reserved.</b>
+              By Group 6 HCI LC20
+            </h2>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

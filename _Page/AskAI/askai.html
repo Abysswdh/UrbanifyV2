@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urbanify | Ask AI</title>
+    <meta name="description" content="Tanya AI tentang Smart City, IoT, Urban Greenspace, dan topik urban lainnya berdasarkan konten website Urbanify." />
+
+    <link rel="icon" type="image/x-icon" href="../../Assets/4.png" />
+    <link rel="stylesheet" href="askai.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <div id="loading-screen">
+        <div class="loader"></div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="chat-sidebar" id="chatSidebar">
+        <div class="sidebar-top">
+          <button id="newChatBtn" type="button" class="new-chat-btn" title="Percakapan Baru">
+            <i class="fa-solid fa-plus"></i>
+            <span>Percakapan Baru</span>
+          </button>
+        </div>
+
+        <div class="sidebar-search">
+          <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              id="historySearchInput"
+              type="text"
+              placeholder="Cari percakapan..."
+              class="search-input"
+            />
+          </div>
+        </div>
+
+        <div class="sidebar-history" id="historyList">
+          <div class="history-empty">
+            <i class="fa-regular fa-comment-dots"></i>
+            <p>Belum ada riwayat percakapan</p>
+          </div>
+        </div>
+
+        <div class="sidebar-bottom">
+          <button id="exportHistoryBtn" type="button" class="sidebar-action-btn" title="Export riwayat">
+            <i class="fa-solid fa-download"></i>
+            <span>Export</span>
+          </button>
+          <button id="clearHistoryBtn" type="button" class="sidebar-action-btn danger" title="Hapus semua riwayat">
+            <i class="fa-solid fa-trash-can"></i>
+            <span>Hapus Semua</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Chat Area -->
+      <div class="chat-main">
+        <!-- Top Bar -->
+        <div class="chat-topbar">
+          <div class="topbar-left">
+            <button id="sidebarToggle" type="button" class="icon-btn" title="Toggle sidebar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="../../index.html" class="topbar-logo">
+              <img src="../../Assets/4.png" alt="Urbanify" />
+            </a>
+            <span class="topbar-title">Urbanify AI</span>
+          </div>
+
+          <div class="topbar-center">
+            <div class="model-badge" id="modelBadge">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Gemini 2.5 Flash</span>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <nav class="topbar-nav">
+              <a href="../../index.html" class="topbar-nav-link">Home</a>
+              <a href="../About/about.html" class="topbar-nav-link">About</a>
+              <a href="../Gallery/gallery.html" class="topbar-nav-link">Gallery</a>
+              <a href="../Contact/contact.html" class="topbar-nav-link">Contact</a>
+            </nav>
+            <div class="topbar-mobile-menu">
+              <button class="icon-btn" id="mobileMenuBtn" type="button">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+              <div class="mobile-dropdown" id="mobileDropdown">
+                <a href="../../index.html">Home</a>
+                <a href="../About/about.html">About</a>
+                <a href="../SmartCity/smart.html">Smart City</a>
+                <a href="../SmartEnvironment/environment.html">Smart Environment</a>
+                <a href="../UrbanGreenspace/UrbanGreenSpace.html">Urban Greenspace</a>
+                <a href="../IoT/iot.html">IoT</a>
+                <a href="../CitizenEngagement/citizenengagement.html">Citizen Engagement</a>
+                <a href="../Gallery/gallery.html">Gallery</a>
+                <a href="../Contact/contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="chat-body">
+          <!-- Welcome Screen (shown when no messages) -->
+          <div class="welcome-screen" id="welcomeScreen">
+            <div class="welcome-icon">
+              <div class="ai-orb">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+            </div>
+            <h1>Urbanify AI</h1>
+            <p class="welcome-subtitle">Tanya apa saja tentang Smart City, IoT, Urban Greenspace, dan topik urban lainnya.</p>
+            
+            <div class="suggestion-grid">
+              <button class="suggestion-card" data-prompt="Apa itu Smart City dan bagaimana penerapannya di Indonesia?">
+                <i class="fa-solid fa-city"></i>
+                <span>Apa itu Smart City dan penerapannya?</span>
+              </button>
+              <button class="suggestion-card" data-prompt="Jelaskan peran IoT dalam pembangunan kota pintar">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Peran IoT dalam kota pintar</span>
+              </button>
+              <button class="suggestion-card" data-prompt="Apa manfaat Urban Greenspace bagi kesehatan masyarakat?">
+                <i class="fa-solid fa-tree"></i>
+                <span>Manfaat Urban Greenspace</span>
+              </button>
+              <button class="suggestion-card" data-prompt="Bagaimana cara meningkatkan Citizen Engagement dalam Smart City?">
+                <i class="fa-solid fa-users"></i>
+                <span>Citizen Engagement dalam Smart City</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Messages Container -->
+          <div id="chatMessages" class="chat-messages"></div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-area">
+          <form id="chatForm" class="chat-input-form">
+            <div class="input-container">
+              <textarea
+                id="userQuestion"
+                rows="1"
+                placeholder="Tanyakan sesuatu tentang Urbanify..."
+                class="chat-textarea"
+              ></textarea>
+              <button id="sendBtn" type="submit" class="send-btn" title="Kirim pesan">
+                <i class="fa-solid fa-arrow-up"></i>
+              </button>
+            </div>
+            <p class="input-hint">
+              AI membaca konten website Urbanify untuk menjawab. Tekan <kbd>Enter</kbd> untuk kirim, <kbd>Shift</kbd>+<kbd>Enter</kbd> untuk baris baru.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Hidden status for indexing (used by JS) -->
+      <div id="indexStatus" class="hidden-status"></div>
+      <ul id="indexedPagesList" class="hidden-status"></ul>
+    </div>
+
+    <script src="askai.js"></script>
+  </body>
+</html>

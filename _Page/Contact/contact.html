@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="widthdevice-width, initial-scale=1.0" />
+  <title>Urbanify | Contact</title>
+
+  <!-- Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!--AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../Assets/4.png">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="contact.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
+  <!-- 
+  font-family: "Manrope", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  -->
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!-- Loading -->
+  <div id="loading-screen">
+    <div class="loader"></div>
+  </div>
+  <!-- end of Loading -->
+
+  <!-- Header -->
+  <header>
+    <nav class="navigation">
+      <div class="nav-middle" id="nav-middle">
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="../About/about.html" class="nav-link">About</a>
+        <a href="#" class="nav-link" id="education-link">
+          Education <i class="fas fa-caret-down"></i>
+          <div class="dropdown-education" id="education-dropdown">
+            <div class="dropdown-education-content-container">
+              <div class="dropdown-education-content-container-top">
+                <div>
+                  <img src="../../Assets/Icon/SmartCity.svg" alt="">
+                </div>
+                <h1>Memberikan edukasi mengenai Smart City.</h1>
+              </div>
+              <div class="dropdown-education-content-container-down">
+                <div class="dropdown-education-content-container-down-left">
+                  <h2>Edukasi Utama</h2>
+                  <img class="image-smartcity" src="../../Assets/smartCity-2.png" alt="image not loading">
+                  <h3 class="link-smartcity">Smart City</h3>
+                  <p>
+                    Smart City adalah konsep perkotaan yang menggunakan teknologi untuk
+                    mengelola kota dengan lebih efisien.
+                  </p>
+
+                </div>
+                <div class="dropdown-education-content-container-down-right">
+                  <h2>Sub-Edukasi</h2>
+                  <p class="link-environment">
+                    Smart Environment
+                  </p>
+                  <p class="link-urban">
+                    Urban Greenspace
+                  </p>
+                  <p class="link-iot">
+                    Internet of Things
+                  </p>
+                  <p class="link-citizen">
+                    Citizen Engagement
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="underline" id="underline"></div>
+      </div>
+      <div class="logo-left">
+        <a href="../../index.html">
+          <img class="logo-nav" src="../../Assets/3.png" alt="Logo">
+        </a>
+      </div>
+      <div class="nav-middle" id="nav-middle">
+        <a href="../Gallery/gallery.html" class="nav-link">Gallery</a>
+        <a href="../Contact/contact.html" class="nav-link active" id="nav-link-active">Contact</a>
+        <a href="../AskAI/askai.html" class="nav-link">Ask AI</a>
+      </div>
+
+      <!-- RESPONSIVE -->
+      <div class="dropdown-phone">
+        <button class="dropbtn-phone"><i class="fas fa-bars"></i> Menu</button>
+        <div class="dropdown-phone-content">
+          <a href="../../index.html">Home</a>
+          <a href="../About/about.html">About</a>
+          <a href="../SmartCity/smart.html">Smart City</a>
+          <a href="../SmartEnvironment/environment.html">Smart Environment</a>
+          <a href="../UrbanGreenspace/UrbanGreenSpace.html">Urban Greenspace</a>
+          <a href="../IoT/iot.html">IoT Application</a>
+          <a href="../CitizenEngagement/citizenengagement.html">Citizen Engagement</a>
+          <a href="../Gallery/gallery.html">Gallery</a>
+          <a href="../Contact/contact.html">Contact</a>
+          <a href="../AskAI/askai.html">Ask AI</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End of Header -->
+
+  <main>
+    <!-- Section 1: Hero -->
+    <section id="section-one">
+      <div class="sectionone-hero">
+        <div class="sectionone-hero-left">
+          <div class="sectionone-hero-left-up">
+            <h2>
+              Selamat Datang di Contact Urbanify. <br>
+              <span class="sectionone-hero-left-up-h2-span">Ada yang bisa kami bantu?</span>
+            </h2>
+          </div>  
+          <div class="sectionone-hero-left-down">
+            <a href="#materi" class="button-box2">
+              <div>
+                <img src="../Contact/Assets/Materi.svg" alt="image not loading">
+                <p>Saya ingin bertanya terkait materi Urbanify.</p>
+              </div>
+            </a>
+            <a href="#support" class="button-box2">
+              <div>
+                <img src="../Contact/Assets/Support.svg" alt="image not loading">
+                <p>Saya ingin menghubungi tim support Urbanify.</p>
+              </div>
+            </a>
+            <a href="#medsos" class="button-box2">
+              <div>
+                <img src="../Contact/Assets/Medsos.svg" alt="image not loading">
+                <p>Saya ingin berkomunikasi melalui media sosial Urbanify.</p>
+              </div>
+            </a>
+            <a href="#hq" class="button-box2">
+              <div>
+                <img src="../Contact/Assets/HQ.svg" alt="">
+                <p>Saya ingin bertemu di Headquarter Urbanify.</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="sectionone-hero-right">
+          <img src="../../Assets/3.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- end of Section 1: Hero -->
+
+    <!-- Section 2: Contact -->
+    <section id="section-two">
+
+      <!-- Materi -->
+      <div class="sectiontwo-materi" id="materi">
+        <div class="sectiontwo-materi-left">
+          <img src="../Contact/Assets/Materi.svg" alt="">
+          <h2>
+            Saya ingin bertanya terkait materi Urbanify.
+          </h2>
+          <p>
+            Ada pertanyaan mengenai materi yang ada
+            di Urbanify? Tim QnA akan membalas pertanyaan anda
+            melalui Email anda.
+            <br><br>
+            Atau jika ingin menguhubungi Tim QnA melalui
+            Whatsapp bisa <a href="#medsos" style="color: #ffffff;">melalui page ini</a>.
+          </p>
+        </div>
+        <div class="sectiontwo-materi-right">
+          <form action="https://formsubmit.co/putraabyasawedha@gmail.com" method="POST">
+            <div class="form-group">
+              <label for="nama"><i class="fas fa-user"></i> Nama Anda:</label>
+              <input type="text" id="nama" name="nama" required />
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Email Anda:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="pesan"><i class="fas fa-comment"></i> Pertanyaan Anda:</label>
+              <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            </div>
+            <button class="button-form-1" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <!-- end of Materi -->
+
+      <!-- Support -->
+      <div class="sectiontwo-support" id="support">
+        <div class="sectiontwo-support-left">
+          <img src="../Contact/Assets/Support.svg" alt="">
+          <h2>
+            Saya ingin menghubungi tim support Urbanify.
+          </h2>
+          <p>
+            Bertemu dengan masalah teknis? Lapor ke
+            tim support kami melalui form ini.
+            <br><br>
+            Atau jika ingin menguhubungi support melalui
+            Whatsapp bisa <a href="#medsos" style="color: #74B328;">melalui page ini</a>.
+          </p>
+        </div>
+        <div class="sectiontwo-support-right">
+          <form action="https://formsubmit.co/putraabyasawedha@gmail.com" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="nama"><i class="fas fa-user"></i> Nama Anda:</label>
+              <input type="text" id="nama" name="nama" required />
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Email Anda:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="pesan"><i class="fas fa-comment"></i> Pertanyaan atau Laporan Anda:</label>
+              <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            </div>
+            <div class="bukti-button-container">
+              <div class="form-group">
+                <label for="bukti"><i class="fas fa-image"></i> Upload Bukti (Opsional):</label>
+                <input class="file-upload-support" type="file" id="bukti" name="bukti" accept="image/*" />
+              </div>
+              <button class="button-form-support" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end of Support -->
+
+      <!-- Media Sosial -->
+      <div class="sectiontwo-medsos" id="medsos">
+        <div class="sectiontwo-medsos-left">
+          <img src="../Contact/Assets/medsos.svg" alt="Social Media Icon">
+          <h2>
+            Saya ingin berkomunikasi melalui media sosial Urbanify.
+          </h2>
+          <p>
+            Ingin menghubungi kami melalui media sosial atau pesan?
+            Jangan segan untuk bertanya kepada kami!
+            <br><br>
+            Jangan lupa follow dan like media sosial kami!
+          </p>
+        </div>
+      
+        <div class="sectiontwo-medsos-right">
+          <div class="sectiontwo-medsos-right-iconcontainer">
+            <a href="https://www.instagram.com/binus_malang/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/+6281558738604" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://discord.gg/UXjz9bK7vz" target="_blank">
+              <i class="fab fa-discord"></i>
+            </a>
+          </div>
+          <div class="sectiontwo-medsos-right-xcontainer">
+            <a class="twitter-timeline" data-lang="id" data-width="350" data-height="300" data-theme="light" href="https://twitter.com/BINUS_MALANG?ref_src=twsrc%5Etfw">Tweets by BINUS_MALANG</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+      
+      <!-- end of Media Sosial -->
+
+      <!-- HQ -->
+      <div class="sectiontwo-hq" id="hq">
+        <div class="sectiontwo-hq-left">
+          <img src="../Contact/Assets/hq.svg" alt="Social Media Icon">
+          <h2>
+            Saya ingin bertemu di Headquarter Urbanify.
+          </h2>
+          <p>
+            Ingin bertemu dengan kami secara langsung?
+            Temui kami disini!
+          </p>
+        </div>
+      
+        <div class="sectiontwo-hq-right">
+          <iframe class="hq-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2867296655436!2d115.1968664761477!3d-8.664257691383261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240b0f2d12bd9%3A0x7dff620013a2aef!2sState%20Senior%20High%20School%204%20Denpasar!5e0!3m2!1sen!2sid!4v1730154539005!5m2!1sen!2sid" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <!-- end of HQ -->
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <section id="footer">
+      <div class="footer-container">
+        <div class="upper-footer">
+          <div class="logo-and-description">
+            <img src="../../Assets/2.png" alt="Image not loading">
+            <h3>Urbanify adalah website edukasi lengkap dan interaktif mengenai Smart City dengan 4 elemen pembentuknya
+            </h3>
+          </div>
+          <div class="location">
+            <h2>Temui Kami</h2>
+            <div class="location-logo" style="margin-bottom: 10px;">
+              <img src="../../Assets/company/binus_logo.svg" alt="BINUS Logo" style="height: 50px;">
+            </div>
+            <p>
+              <span style="font-weight: 800;">BINUS@Malang</span>
+              <br>
+              <span style="font-weight: 600;">Group 6 HCI</span>
+              <br><br>
+              <span>Araya Mansion No. 8-22, Genitri, Tirtomoyo, Pakis, Malang, East Java.</span>
+            </p>
+          </div>
+          <div class="contact">
+            <h2>Hubungi Kami</h2>
+            <p>
+              <span>Sosial Media:</span>
+            </p>
+            <div>
+              <div class="facebook">
+                <i class="fa fa-facebook"></i>
+              </div>
+              <div class="instagram">
+                <i class="fa fa-instagram"></i>
+              </div>
+              <div class="twitter-x">
+                <i class="fa fa-twitter"></i>
+              </div>
+            </div>
+            <p>
+              <br>
+              <span>Call Support: (0361) 485363</span>
+              <br>
+              <span>Fax: 000-000-0000</span>
+              <br>
+              <span>Email: urbanify@fcc4sma.com</span>
+            </p>
+          </div>
+          <div class="navigasi">
+            <h2>Navigasi</h2>
+            <div>
+              <div>
+                <a href="../../index.html">Home</a>
+              </div>
+              <div>
+                <a href="../About/about.html">About</a>
+              </div>
+              <div>
+                <a href="../Gallery/gallery.html">Gallery</a>
+              </div>
+              <div>
+                <a href="../Contact/contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="education-navigation-container">
+            <div class="education-navigation-title-container">
+              <h2>Edukasi Kami</h2>
+            </div>
+            <div class="education-navigation-content-container">
+              <div class="education-navigation-theme">
+                <h3>Edukasi Utama</h3>
+                <div>
+                  <a href="../SmartCity/smart.html">Smart City</a>
+                </div>
+              </div>
+              <div class="education-navigation-subtheme">
+                <h3>Sub-Edukasi</h3>
+                <div>
+                  <a href="../SmartEnvironment/environment.html">Smart Environment</a>
+                </div>
+                <div>
+                  <a href="../UrbanGreenspace/UrbanGreenSpace.html">Urban Greenspace</a>
+                </div>
+                <div>
+                  <a href="../IoT/iot.html">IoT Application</a>
+                </div>
+                <div>
+                  <a href="../CitizenEngagement/citizenengagement.html">Citizen Engagement</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="down-footer">
+          <h2>Copyright &copy; 2024 Urbanify. <b>All Rights Reserved.</b>
+            By Abyasa Wedha
+          </h2>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- end of footer -->
+  <script src="contact.js"></script>
+</body>
+
+</html>
+
+
